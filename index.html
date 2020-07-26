@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="script.js"></script> 
+    
+    <title> </title>
+
+    <style type="text/css">
+        Body {
+            color: white;
+        background-image: url('Images/yo.png');
+        background-size: 100% 100%;
+        background-attachment: fixed; 
+        }
+        h3 {text-align: center;color: #d7bde2 }
+         p {text-align: center;color:  #a3e4d7 }
+     
+     #footer {
+      position: absolute;
+      bottom: 50;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <h1 style="text-align: center; max-width: 600px; margin: 30px auto;">SHINE BIRTHADAY PLANNERS</h1>
+
+    <div class="Home">
+        
+        <div class="row" style="text-align: left; margin-left: 1rem;">
+            <div class="col-md-10">
+                <p>“Blow out the Candles,</p><p>Sing the Song, Cut the Cake</p><p>Make a Wish and</p><p>Relish the Delicious”</p>
+<p>Birthday Party Organisers for every budget, for children of every age with a guarantee that not as single moment would be dull. We will be your partners in your child's birthday events making it an extraordinary event that would impress one and all. Being tech-savvy, we have an acute eye for looking up for the latest developments in the world and infuse them into your parties to make it an avant-garde event.We promise to make your child's birthday party distinctive and unforgettable. </p></p>
+            </div>
+        </div>
+       
+        <div class="row" style="text-align: left; margin-left: 1rem;">
+            <div class="col-md-6">
+                <button class="btn btn-dark" type="button" style="text-align: center; max-width: 300px; margin: 20px auto;" onclick="fun1('fillformdiv')">Register</button>
+                
+            </div>
+        </div>
+       
+        <div class="row" style="text-align: left; margin-left: 1rem;">
+            <div class="col-md-6">
+                <button class="btn btn-dark" type="button" style="text-align: center; max-width: 300px; margin: 20px auto;" onclick="fun1('resvtablediv')">Registerations</button> 
+            </div>
+        </div>
+       
+        
+        <div class="row" id= "fillformdiv" style="text-align: left; margin-left: 1rem; color: rgb(202, 113, 39); display: none;">
+        <form class="bd-example" id= "fillform">
+            <fieldset>
+              
+              <p style="padding: 12px; font-size: 26px;text-align: center;border-left-width: 50px ;color:#2980b9;border: 10px solid black;">REGISTER BELOW</p>
+
+              <p style="padding: 12px; font-size: 20px;">
+                <label for="resname">Venue:-</label>
+                <select id="resname">
+                  
+                  <optgroup label="Lawn">
+                    <option value="">Mortain garden</option>
+                    <option value="">bagh lawn</option>
+                    <option value="">The Prace</option>
+                  </optgroup>
+                  <optgroup label="Pool-Side">
+                    <option value="">Anella pool</option>
+                    <option value="">Barg pool</option>
+                    <option value="">Jewels </option>
+                  </optgroup>
+                </select>
+              </p>
+
+              <p style="padding: 12px; font-size: 20px;">
+                <label for="username">Your Name:- </label>
+                <input type="text" id="username" placeholder="Enter your name" />
+              </p>
+
+              <p style="padding: 12px; font-size: 20px;">
+                <label for="seats">Number of seats:-</label>
+                <select id="seats">
+                  <option value="">less than 100</option>
+                  <option value="">less than 200</option>
+                  <option value="">less than 300</option>
+                  <option value="">less than 400</option>
+                  <option value="">less than 500</option>
+                  <option value="">more than 500</option>
+                </select>
+              </p>
+
+              <p style="padding: 12px; font-size: 20px;">
+                <label for="phone">Contact Number:- </label>
+                <input type="text" id="phone" placeholder="Enter contact number" />
+              </p>
+              
+             
+              <p style="padding: 12px; font-size: 20px;">
+                <label for="email">Email Address:- </label>
+                <input type="text" id="email" placeholder="Enter your email" />
+              </p>
+
+              <p style="padding: 12px; font-size: 20px;">
+                Time:-<br><br>
+                <label>
+                  <input type="radio" name="optionsRadios" id="morning" value="option1" checked="" />
+                  Morning (9:00 - 12:00)
+                </label><br>
+                <label>
+                  <input type="radio" name="optionsRadios" id="afternoon" value="option1" checked="" />
+                  Afternoon (12:00 - 15:00)
+                </label><br>
+                <label>
+                  <input type="radio" name="optionsRadios" id="evening" value="option1" checked="" />
+                  Evening (15:00 - 18:00)
+                </label><br>
+                <label>
+                  <input type="radio" name="optionsRadios" id="night" value="option1" checked="" />
+                  Night (18:00 - 21:00)
+                </label><br>
+              </p>
+              
+              <p style="padding: 12px; font-size: 20px;">
+                <label for="userdate">Date :-</label>
+                <input type="date" id="userdate" />
+              </p>
+
+              <p style="padding: 12px; font-size: 20px;">
+                <button type="button" onclick="reservefun();">Register</button>
+              </p>
+
+            
+            </fieldset>
+        </form>
+      </div>
+
+      
+
+      <div class="row" id= "resvtablediv" style="text-align: left; margin-left: 1rem; display:none;">
+        <table class="table" id="resvtable" style="color: rgb(202, 113, 39); font-size: 18px;">
+          <h4> <p style="padding: 12px; font-size: 26px;text-align: center;border-left-width: 50px ;color:#2980b9;border: 10px solid black;">REGISTERATIONS</p></h4>
+          <tr class="thead-dark">
+            <th>VENUE</th>
+            <th>Customer Name</th>
+            <th>Guests</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Time</th>
+            <th>Date</th>
+          </tr>
+        </table>
+        </div>  
+
+    </div>
+
+
+</body>
+
+</html>
+
+
+
